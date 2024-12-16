@@ -1,0 +1,281 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Define custom fonts */
+@font-face { /* Portal font */
+    font-family: 'portal';
+    src: url('fonts/portal.ttf') format('truetype');
+}
+
+@font-face { /* Lucon font */
+    font-family: 'lucon';
+    src: url('fonts/lucon.ttf') format('truetype');
+}
+
+@font-face { /* UniversLTStd font */
+    font-family: 'UniversLTStd';
+    src: url('fonts/UniversLTStd.ttf') format('truetype');
+}
+
+/* Set a default font for the entire document */
+body {
+    font-family: 'lucon', Arial, sans-serif;
+    line-height: 1.6;
+}
+footer {
+    background-color: black;
+}
+
+<<<<<<< HEAD
+=======
+img {
+    max-width: 90%;
+    height: auto;
+
+}
+
+>>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
+/* Style for headers */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+<<<<<<< HEAD
+=======
+    text-align: center;
+>>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
+}
+
+/* Style for paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Style for links */
+a {
+    color: #0065ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+<<<<<<< HEAD
+
+/* Container class for layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 40px;
+    border: 3px solid #00a2ff;
+    border-radius: 15px;
+
+=======
+/* Container class for layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 5px solid black;
+    border-radius: 1px;
+>>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
+}
+
+button {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for button hover */
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #00a2ff;
+    font-size: larger;
+    box-shadow: #0065ff 0px 0px 5px;
+<<<<<<< HEAD
+    font-weight: bold;
+    color: white;
+}
+image {
+    max-width: 100%;
+}
+=======
+}
+
+>>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
+button:hover {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: #ff9a00;
+    box-shadow: #ff5d00 0px 0px 5px;
+}
+
+#videotop {
+    position: relative;
+    width: 100%;
+}
+
+#background-video {
+    position: block;
+    max-width: 100%;
+    min-height: 100%;
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+#portal-logo {
+    position: absolute;
+    max-width: 65%;
+    min-width: 60%;
+<<<<<<< HEAD
+    top: 50px;
+=======
+    top: 30px;
+>>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
+    left: 50%;
+    transform: translateX(-50%);
+}
+#portalgun-image {
+    display: block;
+    max-width: 50%;
+    margin: 20px auto;
+}
+#logostrip {
+    display: block;
+    max-width: 70%;
+    margin: 20px auto;
+}
+#introduction {
+    text-align: center;
+    margin: 20px auto;
+}
+<<<<<<< HEAD
+#Chell-splash {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#background-blackbox {
+    display: flex;
+    position: relative;
+    background-color: black;
+    max-width: 1200px;
+    height: 900px;
+    z-index: -2;
+    margin: 0px auto -200px auto;
+    top: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    align-items: center;
+}
+#background-cubes {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, black 100%, transparent 60%);
+    object-fit: contain;
+}
+#background-box-and-box{
+    top: -450px; 
+    position: relative;
+}
+#firstblock {
+    position: flex;
+    position: relative;
+    top: -200px;
+    background-color: rgba(0, 0, 0, 1);
+}
+#documentary-thumbnail {
+    display: flex;
+    max-width: 90%;
+    margin: 20px auto;
+}
+#changelog {
+    width: 700px;
+    padding: 60px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+}
+.gallery {
+    display: row;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 20px auto;
+    justify-items: center;
+}
+/* Animation for enlarging elements on hover */
+.enlarge-on-hover {
+    transition: transform 0.3s ease;
+}
+.enlarge-on-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+/* Responsive layout for small screens */
+@media (max-width: 700px) {
+=======
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+>>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
+    .container {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 1rem;
+    }
+    #portalgun-image {
+        max-width: 90%;
+    }
+    #logostrip {
+        max-width: 90%;
+    }
+<<<<<<< HEAD
+    #portal-logo {
+        top: 40px;
+    }
+    #Chell-splash {
+        width: 500px;
+    }
+    #background-blackbox {
+        mask-image: linear-gradient(to top, black 90%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        top: -200px;
+        height: 1200px;
+    }
+    #firstblock {
+        top: -900px;
+    }
+    .container {
+        width: 100%;
+        border: none;
+    }
+    #changelog {
+        width: 100%;
+        padding: 20px;
+    }
+    #background-box-and-box{
+        top: -50px; 
+    }
+=======
+>>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
+}

@@ -1,0 +1,7 @@
+# KEY COLORS
+
+# PORTAL COLORS
+#ff5d00 = strong orange
+#ff9a00 = light orange
+#0065ff = strong blue
+#00a2ff = light blue
