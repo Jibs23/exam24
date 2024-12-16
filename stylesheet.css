@@ -64,7 +64,6 @@ a:hover {
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
 
 /* Container class for layout */
 .container {
@@ -77,15 +76,6 @@ a:hover {
     border: 3px solid #00a2ff;
     border-radius: 15px;
 
-=======
-/* Container class for layout */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 5px solid black;
-    border-radius: 1px;
->>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
 }
 
 button {
@@ -97,17 +87,12 @@ button {
     background-color: #00a2ff;
     font-size: larger;
     box-shadow: #0065ff 0px 0px 5px;
-<<<<<<< HEAD
     font-weight: bold;
     color: white;
 }
 image {
     max-width: 100%;
 }
-=======
-}
-
->>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
 button:hover {
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
     background-color: #ff9a00;
@@ -130,11 +115,7 @@ button:hover {
     position: absolute;
     max-width: 65%;
     min-width: 60%;
-<<<<<<< HEAD
     top: 50px;
-=======
-    top: 30px;
->>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
     left: 50%;
     transform: translateX(-50%);
 }
@@ -152,7 +133,6 @@ button:hover {
     text-align: center;
     margin: 20px auto;
 }
-<<<<<<< HEAD
 #Chell-splash {
     display: flex;
     position: relative;
@@ -229,11 +209,6 @@ button:hover {
 }
 /* Responsive layout for small screens */
 @media (max-width: 700px) {
-=======
-
-/* Responsive layout for small screens */
-@media (max-width: 600px) {
->>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
     .container {
         width: 95%;
         padding: 0.5rem;
@@ -249,7 +224,6 @@ button:hover {
     #logostrip {
         max-width: 90%;
     }
-<<<<<<< HEAD
     #portal-logo {
         top: 40px;
     }
@@ -276,6 +250,4 @@ button:hover {
     #background-box-and-box{
         top: -50px; 
     }
-=======
->>>>>>> d99555d (- Added initial project files including HTML, CSS, video, and images.)
 }
