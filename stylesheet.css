@@ -106,11 +106,13 @@ button:hover {
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
+
 }
 #portalgun-image {
     display: block;
     max-width: 50%;
     margin: 20px auto;
+    animation: floating 2s infinite ease-in-out;
 }
 #logostrip {
     display: block;
@@ -126,44 +128,39 @@ button:hover {
     position: relative;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 400px;
-}
-
-#background-blackbox {
-    display: flex;
-    position: relative;
-    background-color: black;
-    max-width: 1200px;
-    height: 700px;
-    z-index: -2;
+    max-height: 600px;
     margin: 0px auto;
-    top: 300px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    align-items: center;
+    margin-bottom: -250px;
+    z-index: -2;
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
 }
 #background-cubes {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    height: auto;
-    max-height: 80%;
+    max-width: 1400px;
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
     margin: 0 auto;
     z-index: -1;
-    mask-image: linear-gradient(to bottom, black 100%, transparent 60%);
-    object-fit: contain;
 }
+#black-background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    background-color: black;
+    mask-image: linear-gradient(to top, black 80%, transparent 100%); 
+                /*! linear-gradient(to bottom, black 80%, transparent 100%); DOES NOT WORK */
+    z-index: -3;
+    margin: 0 auto;
+}
+
 #firstblock {
     position: flex;
     position: relative;
     background-color: rgba(0, 0, 0, 1);  
     color:white;
+    margin-top: -540px;
 }
 #documentary-thumbnail {
     display: flex;
@@ -194,6 +191,7 @@ button:hover {
 #steamdeck-image {
     max-width: 500px;
     margin: 20px auto;
+    animation: sway 1.5s infinite ease-in-out;
 }
 /* Animation for enlarging elements on hover */
 .enlarge-on-hover {
@@ -203,8 +201,32 @@ button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+/* Animation for swaying effect */
+@keyframes sway {
+    0% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+/* Animation for floating effect */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 /* Responsive layout for small screens */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .container {
         width: 95%;
         padding: 0.5rem;
@@ -223,17 +245,19 @@ button:hover {
         top: 40px;
     }
     #Chell-splash {
+        max-width: 100%;
         width: 500px;
     }
-    #background-blackbox {
-        mask-image: linear-gradient(to top, black 90%, transparent 100%);
-        top: -200px;
-        height: 600px;
-        margin: 0px auto -200px auto;
+    #background-cubes {
+        max-width: 100%;
+        top:-30px;
+    }
+    #black-background {
+        height: 800px;
     }
     #firstblock {
         border-radius: 0px;
-        margin-top: 0px;
+        margin-top: -200px;
         mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
     }
     .container {
