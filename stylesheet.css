@@ -25,6 +25,11 @@
 body {
     font-family: 'lucon', Arial, sans-serif;
     line-height: 1.6;
+    background-image: url('Images/whitebackground.jpg'); /* Path to background image */
+    background-size: 100% 100%; /* Make the background covers the entire page */
+    background-position: center; /* Center background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Make the background image fixed */
 }
 footer {
     background-color: black;
@@ -46,12 +51,8 @@ p {
 a {
     color: #0065ff;
     text-decoration: none;
+    font-weight: bold;
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
 
 /* Container class for layout */
 .container {
@@ -63,6 +64,7 @@ a:hover {
     padding: 40px;
     border: 3px solid #00a2ff;
     border-radius: 15px;
+    background-color: white;
 
 }
 
@@ -96,7 +98,7 @@ button:hover {
     position: block;
     max-width: 100%;
     min-height: 100%;
-    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
 
 #portal-logo {
@@ -178,21 +180,40 @@ button:hover {
     border-radius: 15px;
 }
 .gallery {
-    display: row;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-    margin: 20px auto;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
 }
 .gallery img {
-    max-width: 100%;
+    margin: 10px;
     border-radius: 15px;
+    width: 30%;
 }
 #steamdeck-image {
     max-width: 500px;
     margin: 20px auto;
     animation: sway 1.5s infinite ease-in-out;
 }
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: small;
+    margin-top: 10px;
+    padding-top: 40px;
+    gap: 5%;
+    font-family: lucon;
+}
+footer a {
+    color: white;
+}
+
 /* Animation for enlarging elements on hover */
 .enlarge-on-hover {
     transition: transform 0.3s ease;
@@ -201,6 +222,7 @@ button:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
 /* Animation for swaying effect */
 @keyframes sway {
     0% {
@@ -230,7 +252,10 @@ button:hover {
     .container {
         width: 95%;
         padding: 0.5rem;
+        border: none;
+        background-color: transparent;
     }
+
     .button {
         width: 100%;
         padding: 1rem;
@@ -259,10 +284,6 @@ button:hover {
         border-radius: 0px;
         margin-top: -200px;
         mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
-    }
-    .container {
-        width: 100%;
-        border: none;
     }
     #changelog {
         width: 100%;
