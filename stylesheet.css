@@ -103,13 +103,36 @@ button:hover {
 
 #portal-logo {
     position: absolute;
-    max-width: 65%;
-    min-width: 60%;
-    top: 50px;
+    top: 100px;
+    max-width: 90%;
     left: 50%;
     transform: translateX(-50%);
-
+    color: white;
+    font-size: 250px; 
+    font-family: 'portal';
+    text-shadow: 1px 1px 15px black;
 }
+/* Responsive font size for #portal-logo */
+@media (max-width: 1200px) {
+    #portal-logo {
+        font-size: 200px;
+        top: 90px;
+    }
+}
+@media (max-width: 900px) {
+    #portal-logo {
+        font-size: 150px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    #portal-logo {
+        font-size: 120px;
+        top: 30px
+    }
+}
+
 #portalgun-image {
     display: block;
     max-width: 50%;
@@ -120,6 +143,7 @@ button:hover {
     display: block;
     max-width: 70%;
     margin: 20px auto;
+    filter: brightness(0.9);
 }
 #introduction {
     text-align: center;
@@ -185,11 +209,16 @@ button:hover {
     flex-wrap: nowrap;
     width: 100%;
     justify-content: center;
+    gap: 10px;
 }
 .gallery img {
     margin: 10px;
     border-radius: 15px;
     width: 30%;
+}
+.gallery p {
+    text-align: center;
+    font-size: small;
 }
 #steamdeck-image {
     max-width: 500px;
@@ -266,9 +295,6 @@ footer a {
     #logostrip {
         max-width: 90%;
     }
-    #portal-logo {
-        top: 40px;
-    }
     #Chell-splash {
         max-width: 100%;
         width: 500px;
@@ -284,6 +310,7 @@ footer a {
         border-radius: 0px;
         margin-top: -200px;
         mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+        width: 100%;
     }
     #changelog {
         width: 100%;
