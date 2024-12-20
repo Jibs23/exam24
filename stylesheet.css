@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Define custom fonts */
@@ -49,9 +50,12 @@ p {
 
 /* Style for links */
 a {
-    color: #0065ff;
+    color: #ff5d00;
     text-decoration: none;
     font-weight: bold;
+}
+a:hover {
+    color: #ff9a00;
 }
 
 /* Container class for layout */
@@ -65,7 +69,7 @@ a {
     border: 3px solid #00a2ff;
     border-radius: 15px;
     background-color: white;
-
+    box-shadow: 0px 0px 8px #00a2ff; 
 }
 
 button {
@@ -74,9 +78,9 @@ button {
     padding: 0.8rem 2rem;
     border: none;
     cursor: pointer;
-    background-color: #00a2ff;
+    background-color: #ff9a00;
     font-size: larger;
-    box-shadow: #0065ff 0px 0px 5px;
+    box-shadow: #ff9a00 0px 0px 8px;
     font-weight: bold;
     color: white;
 }
@@ -85,8 +89,8 @@ image {
 }
 button:hover {
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    background-color: #ff9a00;
-    box-shadow: #ff5d00 0px 0px 5px;
+    background-color: #00a2ff;
+    box-shadow: #00a2ff 0px 0px 10px;
 }
 
 #videotop {
@@ -148,6 +152,7 @@ button:hover {
 #introduction {
     text-align: center;
     margin: 20px auto;
+    text-transform: uppercase;
 }
 #Chell-splash {
     display: flex;
@@ -195,6 +200,17 @@ button:hover {
     border:#FF0000 1px solid;
     border-radius: 1px;
 }
+#table-of-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 0px 0px 8px #ff9a00;
+    border: #ff9a00 3px solid;
+    background-color: #fff3e2;
+    color: #ff5d00;
+}
 #changelog {
     width: 700px;
     padding: 60px;
@@ -202,6 +218,7 @@ button:hover {
     color: white;
     border: 0px;
     border-radius: 15px;
+    box-shadow: 0px 0px 8px #ffffff; 
 }
 .gallery {
     display: flex;
@@ -283,6 +300,7 @@ footer a {
         padding: 0.5rem;
         border: none;
         background-color: transparent;
+        box-shadow: none;
     }
 
     .button {
