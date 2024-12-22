@@ -32,9 +32,6 @@ body {
     background-repeat: no-repeat; /* Do not repeat the background image */
     background-attachment: fixed; /* Make the background image fixed */
 }
-footer {
-    background-color: black;
-}
 
 /* Style for headers */
 h1, h2, h3, h4, h5, h6 {
@@ -214,13 +211,26 @@ button:hover {
     padding-right: 30px;
 }
 #changelog {
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
     padding: 60px;
-    background-color: black;
-    color: white;
-    border: 0px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 8px #ffffff; 
+    background: repeating-linear-gradient( /* Background pattern */
+        rgb(30, 12, 0),
+        rgb(30, 12, 0) 5px,
+        rgb(35, 14, 0) 5px,
+        rgb(35, 14, 0) 10px
+    );
+    color: rgb(232, 232, 73);
+    box-shadow: inset 0px 0px 500px rgba(234, 160, 0, 0.5);
+}
+.ascii {
+    white-space: pre; /* Preserve whitespace */
+    margin: 0px auto;
+    width: fit-content;
+    
 }
 .gallery {
     display: flex;
@@ -253,7 +263,7 @@ footer {
     background-color: black;
     color: white;
     font-size: small;
-    margin-top: 10px;
+    margin-top: 0px;
     padding-top: 40px;
     gap: 5%;
     font-family: lucon;
@@ -262,6 +272,7 @@ footer {
 footer a {
     color: white;
 }
+
 
 /* Animation for enlarging elements on hover */
 .enlarge-on-hover {
@@ -339,13 +350,16 @@ footer a {
         width: 100%;
     }
     #changelog {
-        width: 100%;
-        padding: 20px;
+        padding: 40px;
+        box-shadow: inset 0px 0px 80px rgba(234, 160, 0, 0.5);
     }
     #documentary-thumbnail {
         margin-bottom: 60px;
     }
     #steamdeck-image {
         max-width: 95%;
+    }
+    .ascii {
+        font-size: small;
     }
 }
