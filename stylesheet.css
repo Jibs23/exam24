@@ -210,6 +210,8 @@ button:hover {
     border: #ff9a00 3px solid;
     background-color: #fff3e2;
     color: #ff5d00;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #changelog {
     width: 700px;
@@ -255,6 +257,7 @@ footer {
     padding-top: 40px;
     gap: 5%;
     font-family: lucon;
+    max-width: 100%;
 }
 footer a {
     color: white;
@@ -302,7 +305,12 @@ footer a {
         background-color: transparent;
         box-shadow: none;
     }
-
+    footer {
+        gap:15px;
+    }
+    footer img {
+        width: 90px;
+    }
     .button {
         width: 100%;
         padding: 1rem;
