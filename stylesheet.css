@@ -109,29 +109,12 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 250px; 
     font-family: 'portal';
     text-shadow: 1px 1px 15px black;
-}
-/* Responsive font size for #portal-logo */
-@media (max-width: 1200px) {
-    #portal-logo {
-        font-size: 200px;
-        top: 90px;
-    }
-}
-@media (max-width: 900px) {
-    #portal-logo {
-        font-size: 150px;
-        top: 100px;
-    }
-}
-
-@media (max-width: 600px) {
-    #portal-logo {
-        font-size: 120px;
-        top: 30px
-    }
+    
+    /* clamp is a function that takes three parameters: 
+    the minimum value, the preferred value, and the maximum value. */
+    font-size: clamp(90px, 20vw, 300px); 
 }
 
 #portalgun-image {
@@ -361,5 +344,8 @@ footer a {
     }
     .ascii {
         font-size: small;
+    }
+    #portal-logo {
+        top: 50px;
     }
 }
