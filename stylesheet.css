@@ -80,14 +80,15 @@ button {
     box-shadow: #ff9a00 0px 0px 8px;
     font-weight: bold;
     color: white;
-}
-image {
-    max-width: 100%;
+    
 }
 button:hover {
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
     background-color: #00a2ff;
     box-shadow: #00a2ff 0px 0px 10px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.3s ease;
+}
+img {
+    max-width: 100%;
 }
 
 #videotop {
@@ -96,10 +97,10 @@ button:hover {
 }
 
 #background-video {
-    position: block;
+    position: relative;
     max-width: 100%;
     min-height: 100%;
-    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 #portal-logo {
@@ -119,7 +120,7 @@ button:hover {
 
 #portalgun-image {
     display: block;
-    max-width: 50%;
+    max-width: 40%;
     margin: 20px auto;
     animation: floating 2s infinite ease-in-out;
 }
@@ -158,10 +159,11 @@ button:hover {
     display: block;
     position: absolute;
     width: 100%;
-    height: 1100px;
+    height: 1400px;
     background-color: black;
-    mask-image: linear-gradient(to top, black 80%, transparent 100%); 
-                /*! linear-gradient(to bottom, black 80%, transparent 100%); DOES NOT WORK */
+    mask-composite: intersect; /* Allows the two masks to work at the same time */
+    mask-image: linear-gradient(to top, black 80%, transparent 100%), 
+                linear-gradient(to bottom, black 80%, transparent 100%);
     z-index: -3;
     margin: 0 auto;
 }
@@ -194,7 +196,6 @@ button:hover {
     padding-right: 30px;
 }
 #changelog {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
@@ -207,7 +208,23 @@ button:hover {
         rgb(35, 14, 0) 10px
     );
     color: rgb(232, 232, 73);
-    box-shadow: inset 0px 0px 500px rgba(234, 160, 0, 0.5);
+    box-shadow: inset 0px 0px 500px rgba(234, 160, 0, 0.5), 
+                0px 0px 12px rgba(0, 0, 0, 1);
+}
+#changelog div {
+    margin: 20px;
+}
+#changelog h2 {
+    text-align: center;
+}
+#changelog h1 {
+    text-align: center;
+}
+#change-log-to-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    gap: 20px;
+    justify-content: center;
 }
 .ascii {
     white-space: pre; /* Preserve whitespace */
@@ -233,9 +250,9 @@ button:hover {
     font-size: small;
 }
 #steamdeck-image {
+    display: block;
     max-width: 500px;
     margin: 20px auto;
-    animation: sway 1.5s infinite ease-in-out;
 }
 footer {
     display: flex;
@@ -263,7 +280,6 @@ footer a {
 }
 .enlarge-on-hover:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease;
 }
 
 /* Animation for swaying effect */
@@ -335,6 +351,7 @@ footer a {
     #changelog {
         padding: 40px;
         box-shadow: inset 0px 0px 80px rgba(234, 160, 0, 0.5);
+        display:flex;
     }
     #documentary-thumbnail {
         margin-bottom: 60px;

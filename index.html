@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- mobile scaling  -->
     <title>Portal Anniversary Update</title> <!-- Title of the page -->
     <link rel="stylesheet" href="stylesheet.css"> <!-- Link to the CSS file -->
-    <link rel="icon" href="Images\portal.png" type="image/x-icon"> <!-- Tab icon -->
+    <link rel="icon" href="Images/portal.png" type="image/x-icon"> <!-- Tab icon -->
 </head>
 <body>
     <div id="videotop">
         <video autoplay muted loop id="background-video">
-            <source src="Images\trailer.mp4" type="video/mp4">
+            <source src="Images/trailer.mp4" type="video/mp4">
         </video>
         <p id="portal-logo"> P<span style="color: #00a2ff; text-shadow: #00a2ff 0px 0px 8px;" >O</span>RTAL</p>    
     </div>
@@ -24,7 +24,7 @@
             </p>
         </div>
 
-        <img id="logostrip" src="Images\logostrip.png">
+        <img id="logostrip" src="Images/logostrip.png">
         <img src="Images/portalgun.png" alt="Portal Gun" id="portalgun-image">
         <br>
         <div id="introduction">
@@ -41,7 +41,7 @@
         <br>
         
         <div id="black-background"> </div>
-        <img id="Chell-splash" src="Images\Chell-smash.webp">
+        <img id="Chell-splash" src="Images/Chell-smash.webp">
         <img src="Images\background-cubes.png" id="background-cubes"> 
 
         
@@ -72,10 +72,10 @@
                     The possibilities are endless, and the community has already created hundreds of new levels and challenges for you to enjoy. <br> 
                     Download them now and experience Portal like never before!
                 </p>
-                <div class="gallery">
-                    <img src="Images\workshop1.jpg" alt="Workshop Image 1" >
-                    <img src="Images\workshop2.jpg" alt="Workshop Image 2" >
-                    <img src="Images\workshop3.jpg" alt="Workshop Image 3" >
+                <div class="gallery"> <!-- ! DO NOT TOUCH THIS, IT WILL BREAK FOR SOME REASON-->
+                    <img src="Images/workshop1.jpg" alt="Workshop Image 1" >
+                    <img src="Images/workshop2.jpg" alt="Workshop Image 2">
+                    <img src="Images/workshop3.jpg" alt="Workshop Image 3" >
                 </div>
             </div>
             <div class="container" id="updated-game-content">
@@ -97,11 +97,11 @@
                     Experience Portal like never before with stunning visuals and improved performance.
                     <div class="gallery">
                         <div style="width: 50%;">
-                            <img style="width: 100%;" src="Images\graphic1.jpg" alt="graphic Image 1">
+                            <img style="width: 100%;" src="Images/graphic1.jpg" alt="graphic Image 1">
                             <p><b>Before</b></p>
                         </div>
                         <div style="width: 50%;">
-                            <img style="width: 100%;" src="Images\graphic2.jpg" alt="graphic Image 2">
+                            <img style="width: 100%;" src="Images/graphic2.jpg" alt="graphic Image 2">
                             <p><b>After</b></p>
                         </div>
                     </div>
@@ -115,93 +115,96 @@
                     The Portal 20th Anniversary Update adds support for modern controllers, improved mouse and keyboard controls, and customizable key bindings. <br> 
                     The game is now Steam Deck Verified and supports Steam Input for a seamless experience on the go.
                 </p>
-                <img src="Images\steam-deck.png" alt="Steam Deck" id="steamdeck-image">
+                <a href="https://store.steampowered.com/steamdeck" target="_blank" class="enlarge-on-hover" style="display: block; width: fit-content; align-self: center;" >
+                    <img src="Images/steam-deck.png" alt="Steam Deck" id="steamdeck-image" >
+                </a>
             </div>
         
         <div id="changelog">
-            <p>
-                <h1>bug fixes and change notes</h1>
 
-                <h2>Content</h2>
-                <ul>
-                    <li>Added Steam Workshop support</li>
-                    <li>Added 15 new challenge levels.</li>
-                    <li>Introduced new story elements and voice lines.</li>
-                    <li>New Easter eggs and hidden secrets.</li>
-                    <li>Restored beta content.</li>
-                    <br>
-                    <br>
-                </ul>
+            <h1>bug fixes and change notes</h1>
+            <div id="change-log-to-grid">
+                <div>
+                    <h2>Content</h2>
+                    <ul>
+                        <li>Added Steam Workshop support</li>
+                        <li>Added 15 new challenge levels.</li>
+                        <li>Introduced new story elements and voice lines.</li>
+                        <li>New Easter eggs and hidden secrets.</li>
+                        <li>Restored beta content.</li>
+                    </ul>
+                </div>
 
-                <h2>Rendering and Graphics</h2>
-                <ul>
-                    <li>Enhanced graphics with updated textures and models.</li>
-                    <li>Improved lighting and shadow effects.</li>
-                    <li>Support for higher resolutions and widescreen displays.</li>
-                    <br>
-                    <br>
-                </ul>
+                <div>
+                    <h2>Rendering and Graphics</h2>
+                    <ul>
+                        <li>Enhanced graphics with updated textures and models.</li>
+                        <li>Improved lighting and shadow effects.</li>
+                        <li>Support for higher resolutions and widescreen displays.</li>
+                    </ul>
+                </div>
 
-                <h2>UI and Options</h2>
-                <ul>
-                    <li>Redesigned main menu and HUD for a modern look.</li>
-                    <li>Added new accessibility options.</li>
-                    <li>Improved in-game tutorials and hints.</li>
-                    <br>
-                    <br>
-                </ul>
+                <div>
+                    <h2>UI and Options</h2>
+                    <ul>
+                        <li>Redesigned main menu and HUD for a modern look.</li>
+                        <li>Added new accessibility options.</li>
+                        <li>Improved in-game tutorials and hints.</li>
+                    </ul>
+                </div>
 
-                <h2>Input</h2>
-                <ul>
-                    <li>Added support for modern controllers.</li>
-                    <li>Improved mouse and keyboard controls.</li>
-                    <li>Customizable key bindings.</li>
-                    <br>
-                    <br>
-                </ul>
+                <div>
+                    <h2>Input</h2>
+                    <ul>
+                        <li>Added support for modern controllers.</li>
+                        <li>Improved mouse and keyboard controls.</li>
+                        <li>Customizable key bindings.</li>
+                    </ul>
+                </div>
 
-                <h2>Gameplay</h2>
-                <ul>
-                    <li>Refined physics and portal mechanics.</li>
-                    <li>Balanced difficulty for a smoother experience.</li>
-                    <li>New achievements and challenges.</li>
-                    <br>
-                    <br>
-                </ul>
+                <div>
+                    <h2>Gameplay</h2>
+                    <ul>
+                        <li>Refined physics and portal mechanics.</li>
+                        <li>Balanced difficulty for a smoother experience.</li>
+                        <li>New achievements and challenges.</li>
+                    </ul>
+                </div>
 
-                <h2>General Map Updates</h2>
-                <ul>
-                    <li>Updated existing maps with new details and secrets.</li>
-                    <li>Improved performance and loading times.</li>
-                    <br>
-                    <br>
-                </ul>
+                <div>
+                    <h2>General Map Updates</h2>
+                    <ul>
+                        <li>Updated existing maps with new details and secrets.</li>
+                        <li>Improved performance and loading times.</li>
+                    </ul>
+                </div>
 
-                <h2>Specific Map Updates</h2>
-                <ul>
-                    <li>Test Chamber 04: Added new puzzle elements.</li>
-                    <li>Test Chamber 09: Redesigned layout for better flow.</li>
-                    <li>Test Chamber 15: Enhanced visual effects and lighting.</li>
-                    <li>Test chamber 03: Fixed crash for modern Intel CPUs.</li>
-                    <br>
-                    <br>
-                </ul>
+                <div>
+                    <h2>Specific Map Updates</h2>
+                    <ul>
+                        <li>Test Chamber 03: Fixed crash for modern Intel CPUs.</li>
+                        <li>Test Chamber 04: Added new puzzle elements.</li>
+                        <li>Test Chamber 09: Redesigned layout for better flow.</li>
+                        <li>Test Chamber 15: Enhanced visual effects and lighting.</li>
+                    </ul>
+                </div>
 
-                <h2>Other</h2>
-                <ul>
-                    <li>Various bug fixes and performance improvements.</li>
-                    <li>Added new community-made content.</li>
-                    <li>Improved compatibility with modern systems.</li>
-                    <li>Steam Deck Verified.</li>
-                    <li>Added support for Steam Input.</li>
-                    <br>
-                    <br>
-                </ul>
+                <div>
+                    <h2>Other</h2>
+                    <ul>
+                        <li>Various bug fixes and performance improvements.</li>
+                        <li>Added new community-made content.</li>
+                        <li>Improved compatibility with modern systems.</li>
+                        <li>Steam Deck Verified.</li>
+                        <li>Added support for Steam Input.</li>
+                    </ul>
+                </div>
+            </div>
+
             <br>
             <br>
             <br>
                 <h2> Cake Added </h2>
-                </p>
                 <p class="ascii"> <!-- CAKE ASCII ART -->
                 ,:/+/-
                 /M/              .,-=;//;-
@@ -232,7 +235,7 @@
     <!-- FOOTER -->
     <footer>
         <a href="http://www.valvesoftware.com/">
-            <img style="max-width: 200px;"  src="Images\valve.png" alt="Valve Logo">
+            <img style="max-width: 200px;"  src="Images/valve.png" alt="Valve Logo">
         </a>
         <a href="https://help.steampowered.com/"> Tech support. </a>
         <a href="https://www.valvesoftware.com/legal/site-terms-of-use"> Site terms of use. </a>
